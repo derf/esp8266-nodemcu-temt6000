@@ -55,12 +55,12 @@ function connect_wifi()
 end
 
 function push_data()
-	local lx, raw = temt6000.read()
+	local lx = temt6000.read()
 	if lx == nil then
 		print("TEMT6000 error")
 	else
-		local json_str = string.format('{"illuminance_lx": %d, "adc_counts": %d, "rssi_dbm": %d}', lx, raw, wifi.sta.getrssi())
-		local influx_str = string.format("illuminance_lx=%d,adc_counts=%d", lx, raw)
+		local json_str = string.format('{"illuminance_lx": %d, "rssi_dbm": %d}', lx, wifi.sta.getrssi())
+		local influx_str = string.format("illuminance_lx=%d", lx)
 		if not publishing_mqtt then
 			publishing_mqtt = true
 			watchdog:start(true)

@@ -41,13 +41,12 @@ temt6000 = require("temt6000")
 
 -- can be called as often as the ADC permits
 function some_timer_callback()
-	local lx, raw = temt6000.read()
+	local lx = temt6000.read()
 	if lx ~= nil then
 		-- lx: estimated illuminance [lx]
-		-- raw: raw ADC counts
-		-- Note that lx is limited to a usable range of about 20 to 2500 lx.
-		-- Darkness cannot be detected properly,
-		-- anything brighter than ~2500 lx will be reported as 2500 lx.
+		-- Note that lx is limited to a usable range of about 20 to 1000 lx.
+		-- Darkness cannot always be detected reliably,
+		-- anything brighter than ~1024 lx will be reported as 1024 lx.
 	else
 		print("TEMT6000 error")
 	end
