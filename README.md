@@ -74,3 +74,11 @@ influx_attr = "..."
 
 Readings will be published as `temt6000[influx_attr] illuminance_lx=%d,adc_counts=%d`.
 So, unless `influx_attr = ''`, it must start with a comma, e.g. `influx_attr = ',device=' .. device_id`.
+
+## References
+
+Mirrors of the esp8266-nodemcu-temt6000 repository are maintained at the following locations:
+
+* [Chaosdorf](https://chaosdorf.de/git/derf/esp8266-nodemcu-temt6000)
+* [Finalrewind](https://git.finalrewind.org/derf/esp8266-nodemcu-temt6000)
+* [GitHub](https://github.com/derf/esp8266-nodemcu-temt6000)
