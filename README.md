@@ -1,9 +1,8 @@
 # ESP8266 Lua/NodeMCU module for TEMT6000 illuminance sensors
 
-[esp8266-nodemcu-temt6000](https://finalrewind.org/projects/esp8266-nodemcu-temt6000/)
-provides an ESP8266 NodeMCU Lua module (`temt6000.lua`) as well as MQTT /
-HomeAssistant / InfluxDB integration example (`init.lua`) for **TEMT6000**
-illuminance sensors connected via analog output.
+This repository provides an ESP8266 NodeMCU Lua module (`temt6000.lua`) as well
+as MQTT / HomeAssistant / InfluxDB integration example (`init.lua`) for
+**TEMT6000** illuminance sensors connected via analog output.
 
 ## Dependencies
 
@@ -77,7 +76,7 @@ So, unless `influx_attr = ''`, it must start with a comma, e.g. `influx_attr = '
 
 ## References
 
-Mirrors of the esp8266-nodemcu-temt6000 repository are maintained at the following locations:
+Mirrors of this repository are maintained at the following locations:
 
 * [Chaosdorf](https://chaosdorf.de/git/derf/esp8266-nodemcu-temt6000)
 * [Finalrewind](https://git.finalrewind.org/derf/esp8266-nodemcu-temt6000)
